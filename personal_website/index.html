@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Nakalyowa Grace Kirabo — Personal Website</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <img src="assets/grace.png" alt="Profile" class="profile-pic">
+        <div>
+          <h1>Nakalyowa Grace Kirabo</h1>
+          <p class="tagline">BLIS Student at COCIS</p>
+        </div>
+      </div>
+      <nav class="main-nav" aria-label="Main navigation">
+        <a href="#education">Education</a>
+        <a href="#experience">Experience</a>
+        <a href="#hobbies">Hobbies</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <button class="nav-toggle" aria-label="Toggle navigation">☰</button>
+    </div>
+  </header>
+
+  <main class="container">
+    <!-- <section class="hero">
+      <h2>Welcome!</h2>
+      <p>This is a responsive personal website built for the BLS3122 Web Document Management practice assignment. Resize the browser to see the layout adapt.</p>
+    </section> -->
+
+    <section id="education">
+      <h2>Schools Attended</h2>
+      <div class="grid schools">
+        <article class="card">
+          <h3>Makerere University</h3>
+          <p>Bachelors of Library and Information Sciences(ongoing)</p>
+        </article>
+        <article class="card">
+          <h3>Blessed Victors Senior School</h3>
+          <p>Uganda Advanced Certificate of Education</p>
+        </article>
+        <article class="card">
+          <h3>Katikamu SDA Secondary School</h3>
+          <p>Uganda Certificate of Education</p>
+        </article>
+        <article class="card">
+          <h3>Kazo Summit Primary School</h3>
+          <p>Primary Leaving Examination</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="experience">
+      <h2>Work Experience</h2>
+      <div class="grid experience-grid">
+        <article class="card">
+          <h3>Records Intern - Case hospital</h3>
+          <p>Records management and proper storage of records.</p>
+        </article>
+        <article class="card">
+          <h3>Verification Officer</h3>
+          <p>Billing patients and closing visits.</p>
+        </article>
+        <article class="card">
+          <h3>Client Relationship Officer</h3>
+          <p>Serving and handling patient needs making sure they get the best experience in the hospital.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="hobbies">
+      <h2>Hobbies</h2>
+      <ul class="hobbies-list">
+        <li>Swimming</li>
+        <li>Traveling</li>
+        <li>Singing</li>
+        <li>Reading novels</li>
+      </ul>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>Email: <a href="mailto:nakalyowag6@gmail.com">nakalyowag6@gmail.com</a></p>
+      <!-- <p>LinkedIn: <a href="https://www.linkedin.com/">linkedin.com/in/kasakya-denis-nicholas</a></p> -->
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>Made for BLS3122 — Web Document Management Practice. © <span id="year"></span></p>
+    </div>
+  </footer>
+
+<script>
+document.getElementById('year').textContent = new Date().getFullYear();
+
+// Simple nav toggle for small screens
+const btn = document.querySelector('.nav-toggle');
+const nav = document.querySelector('.main-nav');
+btn.addEventListener('click', () => {
+  nav.classList.toggle('open');
+});
+</script>
+</body>
+</html>
